@@ -64,7 +64,7 @@ main, .izquierdo {
 }
 
 .nombreEquipo {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   background-color: #cacccc;
   -webkit-text-stroke: 1px black;
