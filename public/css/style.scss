@@ -98,6 +98,7 @@ main{
     }
 }
 .nombreEquipo{
+    @include tituloEquipos();
     font-weight: unquote("bold");
     background-color: #cacccc;
     -webkit-text-stroke: $bordeletra;
