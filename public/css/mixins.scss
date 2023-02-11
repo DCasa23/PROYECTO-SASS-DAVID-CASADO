@@ -19,7 +19,7 @@
     max-height: 200px;
     width: 100%;
     color: rgb(204, 204, 204);
-    background-color: rgb(14, 10, 10);
+    background-color: invert(rgb(204, 204, 204));
 }
 
 @mixin footer() {

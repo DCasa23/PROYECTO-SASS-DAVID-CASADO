@@ -6,7 +6,7 @@ $numeroequipos:8;
 $bordenegro: black 2px solid;
 $bordeletra: 1px black;
 
-$noche:false;
+$noche:true;
 $Giants:#2306e0;
 $Bills:#d50a0a;
 $Chiefs:#a71930;
@@ -48,6 +48,17 @@ $colorestablas: ("victorias2022": rgb(7, 87, 7),"derrotas2022":rgb(155, 8, 8),"e
     @return ($numeroequipos/$numeroequipos);
 
 }
+@function porcentajevictorias($victorias,$numerpartidos){
+
+    @return ($victorias/$numerpartidos);
+
+}
+@function porcentajederrotas($derrotas,$numerpartidos){
+
+    @return ($victorias/$numerpartidos);
+
+}
+
 
 
 body{
@@ -82,15 +93,15 @@ main{
     @extend main;
     @include menu();
     .listaizquierdo{
-        background-color: #d57d0a;
+        background-color: transparentize(#d57d0a, min(0.4,0.8,0.7));
         min-height: alturalista($numeroequipos)+px;
     }
 }
 .nombreEquipo{
-    font-weight: bold;
+    font-weight: unquote("bold");
     background-color: #cacccc;
     -webkit-text-stroke: $bordeletra;
-    padding: 0px 5px;
+    padding: 0px str-length("cinco")+px;
 }
 
 
