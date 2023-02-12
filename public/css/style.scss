@@ -5,7 +5,8 @@ $foto:10;
 $numeroequipos:8;
 $bordenegro: black 2px solid;
 $bordeletra: 1px black;
-
+$paddingvaloresequipos:20px;
+$ochenta:80%;
 $noche:true;
 $Giants:#2306e0;
 $Bills:#d50a0a;
@@ -62,7 +63,7 @@ $colorestablas: ("victorias2022": rgb(7, 87, 7),"derrotas2022":rgb(155, 8, 8),"e
 
 
 body{
-    height: 80%;
+    height: $ochenta;
 }
 
 header{
@@ -114,7 +115,7 @@ main{
     font-weight: bold;
     } 
     span[class^='nombre']{
-        padding-left: 20px;
+        padding-left: $paddingvaloresequipos;
         font-weight: bold;
         color: $SF49Ers;
     }
